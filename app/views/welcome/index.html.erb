@@ -1,0 +1,50 @@
+<div class = "container">
+<section id = "landingpage" >
+    <%= image_tag "menu48.png", :id => 'hamburger'%>
+  <ul class = "cb-slideshow">
+      <li>
+        <span><%= image_tag "placeholder.jpg" %>;</span>
+      </li>
+      <li>
+        <span><%= image_tag "placeholder2.jpg" %>;</span>
+      </li>
+     <li>
+        <span><%= image_tag "placeholder3.jpg" %>;</span>
+      </li>
+    <li>
+        <span><%= image_tag "dark_clouds_2-wallpaper-1366x768.jpg" %>;</span>
+      </li>
+    <li>
+        <span><%= image_tag "beats_by_dre_and_apple-wallpaper-1366x768.jpg" %>;</span>
+    </li>
+    <li>
+      <span><%= image_tag "candice_swanepoel_vs_swim-wallpaper-1366x768.jpg" %>;</span>
+    </li>
+  </ul>
+  
+  <div class = "navmenu">
+    <li id = "home">
+      <%= link_to "Home", root_url %>
+    </li>
+    <li id = "artwork">
+      <%= link_to "Artwork", artwork_path %>
+    </li>    
+    <li id="photography">
+      <%= link_to "Photography", photography_path %>
+    </li>
+    <li id="portfolio">
+      <%= link_to "Portfolio", portfolio_path %>
+    </li>
+    <li id="writing">
+      <%= link_to "Writing", writing_path %>
+    </li>
+    <li id="about">
+      <%= link_to "About Me", about_path %>
+    </li>
+    <li id="contact">
+      <%= link_to "Contact", contact_path %>
+    </li>
+  </div>
+  
+</section>
+</div>
