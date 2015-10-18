@@ -44,7 +44,7 @@ li{
     left: 0px;
     color: transparent;
     background-size: cover;
-    background-position: 50% 50%;
+/*     background-position: 50% 50%; */
     background-repeat: no-repeat;
     opacity: 0;
     z-index: 0;
@@ -70,7 +70,8 @@ li{
     animation-delay: 24s; 
 }
 .cb-slideshow li:nth-child(6) span { 
-    background-image: url("candice_swanepoel_vs_swim-wallpaper-1366x768.jpg");
+    background-image: url("placeholder9.jpg");
     animation-delay: 30s; 
 }
+
 

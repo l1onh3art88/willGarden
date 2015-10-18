@@ -1,0 +1,28 @@
+<nav class = "navbar">
+<h1 id = "logo"> Will Garden </h1>
+
+<%= image_tag "menu48 (1).png", :id => 'hamburger'%>
+<div class = "navmenu">
+    <li id = "home">
+      <%= link_to "Home", root_url %>
+    </li>
+    <li id = "artwork">
+      <%= link_to "Artwork", artwork_path %>
+    </li>    
+    <li id="photography">
+      <%= link_to "Photography", photography_path %>
+    </li>
+    <li id="portfolio">
+      <%= link_to "Portfolio", portfolio_path %>
+    </li>
+    <li id="writing">
+      <%= link_to "Writing", writing_path %>
+    </li>
+    <li id="about">
+      <%= link_to "About Me", about_path %>
+    </li>
+    <li id="contact">
+      <%= link_to "Contact", contact_path %>
+    </li>
+  </div>
+</nav>

@@ -17,26 +17,38 @@
 //= require jquery-ui
 //= require bootstrap
 
-$(document).on('ready',function(){
+var ready;
+ready = function(){
       var clicks = true;
 
   $("#hamburger").click(function(){   
     if(clicks){
       $(".navmenu").slideDown("slow", function(){
-        $(".cb-slideshow").animate({left: "15%"}, "slow");
+//         $(".photo-grid").animate({right: "15%"}, "slow");
       });   
       clicks= false;
     }
     else{
        $(".navmenu").slideUp("slow", function(){                 
-         $(".cb-slideshow").animate({left: "0%"}, "slow"); 
+//          $(".photo-grid").animate({right: "0%"}, "slow"); 
          clicks=true;  
        });
-    }
-                          
+    }                        
   });
-  
-  
-  
-
-});
+  var overlay = $("<div class='overlay'></div>").css({
+					display: 'block',
+					opacity: 0
+				}); 
+        $(".photocell").hover(function() {
+          $(this).append(overlay);
+					overlay.stop(true).animate({
+						opacity: 1
+					});
+				},function() {
+					overlay.stop(true).animate({
+						opacity: 0
+					});
+				});
+};
+$(document).ready(ready);
+$(document).on('page:load', ready);
