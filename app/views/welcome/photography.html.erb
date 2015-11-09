@@ -1,20 +1,25 @@
-<div class = "container">
+<div class = "container-fluid">
   <%= render "public/navbar" %>
-  <div class = "photo-grid">
-    <div class = "photocell">
-      <%= image_tag "placeholder5.jpg" %>
+  <div class = "container photo-grid">
+    <div class= "row">
+      <div class= "photocell col-md-3">
+       <%= image_tag "placeholder5.jpg" %>
+      </div>
+      <div class = "photocell col-md-3">
+        <%= image_tag "placeholder5.jpg" %>
+      </div>
+      <div class = "photocell col-md-3">
+       <%= image_tag "placeholder5.jpg" %>
+      </div>
     </div>
-    <div class = "photocell" style= "left: 33%;">
-      <%= image_tag "placeholder5.jpg" %>
-    </div>
-    <div class = "photocell" style="left:66%">
-      <%= image_tag "placeholder5.jpg" %>
-    </div>
-    <div class = "photocell" style="margin-top:25%">
-      <%= image_tag "placeholder5.jpg" %>
-    </div>
-    <div class = "photocell" style="margin-top: 25%; left: 33%">
-      <%= image_tag "placeholder5.jpg" %>
+    <div class = "row">
+      <div class = "photocell col-md-3">
+        <%= image_tag "placeholder5.jpg"%>
+      </div>
+      <div class = "photocell col-md-3">
+        <%= image_tag "placeholder2.jpg" %>
+      </div>
     </div>
   </div>
 </div>
+

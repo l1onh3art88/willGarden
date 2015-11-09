@@ -1,0 +1,21 @@
+{
+  "name": "willGarden",
+  "homepage": "https://github.com/l1onh3art88/willGarden",
+  "authors": [
+    "l1on3hart88 <spenccheng@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-lightbox": "~0.1.18"
+  }
+}

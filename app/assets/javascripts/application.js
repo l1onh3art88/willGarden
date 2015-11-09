@@ -19,6 +19,7 @@
 
 var ready;
 ready = function(){
+  
       var clicks = true;
 
   $("#hamburger").click(function(){   
@@ -35,20 +36,29 @@ ready = function(){
        });
     }                        
   });
-  var overlay = $("<div class='overlay'></div>").css({
-					display: 'block',
-					opacity: 0
-				}); 
-        $(".photocell").hover(function() {
-          $(this).append(overlay);
-					overlay.stop(true).animate({
-						opacity: 1
-					});
-				},function() {
-					overlay.stop(true).animate({
-						opacity: 0
-					});
-				});
+  //Lightbox Stuff--------------------------------------------------
+  
+  var $image = $("<img>");
+  var $overlay = $("<div class='overlay'></div>")
+  $overlay.append($image);
+  $("body").append($overlay);
+  $('.photocell img').click(function(event){
+    event.preventDefault();
+    var imageLocation = $(this).attr("src");
+    //Update overlay with the image linked in the link
+    $image.attr("src",imageLocation);
+    
+    $overlay.show();
+  })
+  $overlay.click(function(){
+    $overlay.hide();
+    
+  })
+  
+      
+
+ 
+  
 };
 $(document).ready(ready);
 $(document).on('page:load', ready);
