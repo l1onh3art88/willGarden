@@ -84,16 +84,22 @@ a.left.carousel-control, a.right.carousel-control{
 }
 
 .photocell img {   
-  transition: all 6s ease;
+  height:100%;
+  width:100%;
+  transition: all 3s ease;
   display:block;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 .photocell img:hover {   
    transform:scale(1.25);
    background:rgba(0,0,0,0.8);
+filter: grayscale(1);
+-webkit-filter: grayscale(1);
 }
 
 .photo-grid{
-width:80%;
+width:90%;
 height:100%;
 margin:auto;
 position: relative;
@@ -111,7 +117,7 @@ position: relative;
 
 //Overlay--------------------------------------------------------------
  .overlay{
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   width:100%;
@@ -121,7 +127,9 @@ position: relative;
   display:none;
 }
 .overlay img{
-margin-top:20%;
+  width:80%;
+  margin-top:10%;
+  height:70%;
 }
 
 .carousel{
@@ -139,3 +147,21 @@ a.left.carousel-control, a.right.carousel-control {
   margin-top:5%;
 }
 //End of Photography-------------------------------------------------
+
+
+
+//About Will Garden---------------------------------------------------
+#aboutme{
+    background-image: url("willgarden.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 82%;
+    width: 100%;
+    height: 567px;
+    background-position-x: 7%;
+    background-position-y: 72%;
+}
+#aboutme > #blurb{
+ width: 500px;
+ height: 400px;
+ margin-left:40%;
+}
