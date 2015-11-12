@@ -5,10 +5,10 @@
       <div class= "photocell col-md-3" style="height:225px;">
        <%= image_tag "beats_by_dre_and_apple-wallpaper-1366x768.jpg" %>
       </div>
-      <div class = "photocell col-md-3" style="height:100%; width:37%;">
+      <div class = "photocell col-md-3" style="height:225px; width:37%;">
         <%= image_tag "placeholder3.jpg" %>
       </div>
-      <div class = "photocell col-md-3"style="height:225px;">
+      <div class = "photocell col-md-3"style="height:225px;width:289px;">
        <%= image_tag "placeholder5.jpg" %>
       </div>
       <div class = "photocell col-md-3" style="width:45%">
@@ -17,16 +17,53 @@
       <div class = "photocell col-md-3" style="width:50%; height:100%;">
         <%= image_tag "placeholder2.jpg" %>
       </div>
-      <div class = "photocell col-md-3" style="margin-top:-13%; width:44%;height:30%;">
+      <div class = "photocell col-md-3" style="margin-top: -13%;width: 45%;height: 30%;">
         <%= image_tag "placeholder10.jpg" %>
       </div>
-      <div class = "photocell col-md-3" style="width:55%; height:40%">
+      <div class = "photocell col-md-3" style="width:50%; height:100%">
         <%= image_tag "placeholder12.jpg" %>
       </div>
-      <div class = "photocell col-md-3" style="height: 40%;width: 41%; margin-top:-16%">
+      <div class = "photocell col-md-3" style="height: 40%;width: 45%; margin-top:-7%">
         <%= image_tag "placeholder13.jpg" %>
       </div>
     </div>
   </div>
+  <div class="container carouselPhoto">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="Carousel" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel" data-slide-to="1"></li>
+            <li data-target="#Carousel" data-slide-to="2"></li>
+          </ol>    
+          <!-- Carousel items -->
+        <div class="carousel-inner">     
+          <div class="item active">
+            <div class="row">
+              <div class ="col-md-6"><%= image_tag "placeholder.jpg" %> </div>
+              <div class = "col-md-6"><%= image_tag "placeholder11.jpg" %></div>
+            </div>
+          </div>
+          <div class = "item">
+            <div class = "row">
+              <div class="col-md-6"><%= image_tag "placeholder13.jpg" %></div>
+              <div class="col-md-6"><%= image_tag "placeholder9.jpg" %></div>
+            </div><!--.row-->
+          </div><!--.item--> 
+          
+          <div class = "item">
+            <div class = "row">
+              <div class = "col-md-6"> <%= image_tag "placeholder10.jpg" %></div>
+              <div class = "col-md-6"><%= image_tag "placeholder5.jpg"%></div>
+            </div>
+          </div>
+              
+        </div><!-- Inner Carousel -->
+          <a data-slide="prev" href="#Carousel" class="left carousel-control"  style="width:8%"></a>
+          <a data-slide="next" href="#Carousel" class="right carousel-control" style="width:8%"></a>
+      </div>
+    </div>
+   </div>
+  </div>
 </div>
-

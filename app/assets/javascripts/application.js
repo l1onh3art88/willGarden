@@ -54,10 +54,23 @@ ready = function(){
     $overlay.hide();
     
   })
-  
-      
-
- 
+//Writing Page
+ //Appends Writing to Container
+  var $writingTitle=$("<h3></h3>")
+  var $writing = $("<p></p>")
+  $(".writing").append($writing);
+  $(".writing").append($writingTitle);
+  $(".writingThumb").click(function(event){
+    event.preventDefault();
+    var writingLocation=$(this).html();
+    //Updates paragraph per thumbnail selected
+    $($writing).html(writingLocation);
+    
+  });
+ $(".carouselLogo").click(function(){
+   $(".photo-grid").toggle(2);
+   $(".carouselPhoto").toggle(2);
+ })
   
 };
 $(document).ready(ready);
